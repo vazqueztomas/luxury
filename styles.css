@@ -7,7 +7,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
 h2 {
-    font-family: 'Didact Gothic', sans-serif
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 2rem;
 }
 p{
     font-family: 'Open Sans', sans-serif;
@@ -131,4 +132,52 @@ body{
 .last .text {
     margin: 0 6rem;
 }
+
+.container-team{
+    margin: 3rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.persons{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 10rem;
+}
+
+.agente{
+    margin: 0 2rem;
+}
+.agente img{
+    width: 3rem;
+}
+
+.agente a{
+    text-decoration: none;
+    color:rgb(99, 98, 98);
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+
+footer img{
+    width: 30px;    
+    padding: 1.2rem;
+}
+
+.column {
+    margin: 0 2rem;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+
 

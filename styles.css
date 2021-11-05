@@ -10,6 +10,9 @@ h2 {
     font-family: 'Didact Gothic', sans-serif;
     font-size: 2rem;
 }
+#title {
+    display: none;
+}
 p{
     font-family: 'Open Sans', sans-serif;
 }
@@ -20,7 +23,7 @@ nav {
     padding-top: 1.5rem;
     font-family: 'Ubuntu Condensed', sans-serif;
 }
-.fondo {
+/* .fondo {
     background-image: url('https://media.architecturaldigest.in/wp-content/uploads/2018/04/Inside-Kourtney-Kardashians-California-Home-1366x768.jpg');background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -34,16 +37,14 @@ nav {
 	left: 0;
 	right: 0;
 	background-color: rgba(0,0,0,0.6);
-}
+} */
 nav h2 {
     padding-left: 5rem;
-    color: #fff;
-	position: relative
+    color: #222;
 }
 nav ul{
     display: flex;
     flex-direction: row;
-    position: relative;
 }
 
 nav ul li{
@@ -54,8 +55,7 @@ nav ul li{
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
-	position: relative;
+    color: #222;
     padding: .5rem;
     border-radius: 5px;
 
@@ -88,9 +88,7 @@ body{
 .why-info{
     text-align: center;
     padding: 5rem 15rem;
-    background-image: url('https://cdn1.neolith.com/wp-content/uploads/wp-imk/colecciones/classtone/blanco-carrara-bc02r/despiece/blanco-carrara-bc02r.jpg');background-position: center center;
-	background-size: cover;
-	background-repeat: no-repeat;
+    
 }
 
 .one, .two{
@@ -181,3 +179,157 @@ footer img{
 
 
 
+/* RESPONSIVE */
+
+@media only screen and (min-width: 320px) and (max-width: 736px) {
+    
+    h2 {
+        font-family: 'Didact Gothic', sans-serif;
+        font-size: 1.5rem;
+    }
+
+    #title {
+        display:flex;
+        justify-content: center;
+    }
+    p{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+    }
+
+    nav {
+        display: none;
+    }
+
+    li {
+        padding: 0;
+    }
+    
+    body{
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+    
+    }
+    
+    .why-info{
+        padding: 1rem;
+    }
+
+    .get-started{
+        display:flex;
+        justify-content: space-around;
+        text-align: center;
+        padding: .5rem;
+        background-color: var(--main-color);
+        font-family: 'Ubuntu Condensed', sans-serif;
+    }
+    
+    .get-started a{
+        border: 1px solid black;
+        padding: 1rem;
+        font-weight: none;
+        text-decoration: none;
+        color: black;
+        border-radius: 10px;
+    }
+    
+    
+    .one, .two{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem;
+        padding: 1rem 0;
+    }
+    
+    .one img, .two img, .three img, .four img, .last img{
+        width: 80%;
+        border-radius: 10px;
+        align-items: center;
+    }
+    
+    .one .text, .two .text, .three .text, .four .text{
+        margin: .5rem;
+        text-align: center;
+    }
+    .special-divs{
+        background-color: #222;
+    }
+    .three, .four{
+        color: white;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: .5rem;
+        padding: 1rem 0;
+    }
+    
+    .last {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 4rem;
+    }
+    
+    .last .text {
+        margin: 0 .5rem;
+    }
+    
+    .container-team{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .persons{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .agente{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .agente img{
+        width: 3rem;
+    }
+    
+    .agente a{
+        text-decoration: none;
+        color:rgb(99, 98, 98);
+    }
+    
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    
+    #social-medias{
+        display: flex;
+        flex-direction: row;
+        
+        width: 20px;    
+        padding: 1.2rem;
+    }
+    
+    .column {
+        margin: 0 2rem;
+        font-family: 'Ubuntu Condensed', sans-serif;
+        align-items: center;
+        text-align: center;
+    }
+    
+    
+    
+}
